@@ -3,15 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
     <title>Pavattone</title>
   </head>
   <body>
-    <h1 class="modal__titulo">Login</h1>
-    <h2 class="modal__subtitulo">Entre com suas credenciais.</h2>
-    <input type="text" class="formulario__input" placeholder="Usuário"/>
-    <input type="password" class="formulario__input" placeholder="Senha"/>
-    <input type="checkbox" />
-    <button class="modal__botao">Entrar</button>
+    <div class="modal">
+      <div class="modal__container">
+        <div class="modal__header">
+          <h1 class="modal__titulo">Login</h1>
+          <h2 class="modal__subtitulo">Entre com suas credenciais.</h2>
+        </div>
+        <form class="modal__formulario">
+          <div class="formulario__inputs">
+            <input
+              type="text"
+              class="formulario__input"
+              placeholder="Usuário"
+            />
+            <input
+              type="password"
+              class="formulario__input"
+              placeholder="Senha"
+            />
+          </div>
+          <div class="formulario__checkbox">
+            <input
+              type="checkbox"
+              id="mostrarSenha"
+              class="formulario__checkbox__input"
+            />
+            <label for="mostrarSenha" class="formulario__checkbox__label"
+              >Mostrar senha</label
+            >
+          </div>
+        </form>
+        <div class="modal__botao">
+          <button class="botao">Entrar</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
