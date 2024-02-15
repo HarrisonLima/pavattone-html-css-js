@@ -1,10 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   align-items: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   display: flex;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
   justify-content: center;
-  margin: auto 0;
+  height: 100vh;
+  width: 100vw;
 }
 
 .modal {
@@ -13,7 +22,7 @@ body {
   border-radius: 12px;
   display: flex;
   flex-direction: column;
-  height: 550px;
+  height: 600px;
   width: 500px;
 }
 
@@ -21,38 +30,47 @@ body {
   padding: 50px;
 }
 
+.modal__bandeira {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.modal__bandeira img {
+  align-items: center;
+  justify-content: center;
+}
+
 .modal__header {
   display: flex;
   flex-direction: column;
+  gap: 5px;
   justify-content: left;
-}
-
-h1 {
-  font-size: 40px;
-  margin: 0px;
+  margin-top: 30px;
 }
 
 .modal__titulo {
   color: #ffffff;
-}
-
-h2 {
-  font-size: 16px;
-  margin-bottom: 0px;
-  margin-top: 5px;
+  font-size: 40px;
 }
 
 .modal__subtitulo {
   color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .modal__formulario {
   display: flex;
   flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
 }
 
 .formulario__inputs {
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .formulario__input {
@@ -63,7 +81,6 @@ h2 {
   font-size: 16px;
   font-weight: 600;
   height: 45px;
-  margin-top: 15px;
   padding-left: 25px;
   width: 350px;
 }
@@ -72,23 +89,22 @@ h2 {
   align-items: center;
   display: flex;
   flex-direction: row;
-  margin-top: 25px;
+  gap: 10px;
 }
 
 .formulario__checkbox__input {
   appearance: none;
-  background-color: #FFFFFF;
-  border: 1px solid #9E9E9E;
+  background-color: #ffffff;
+  border: 1px solid #9e9e9e;
   border-radius: 6px;
   height: 32px;
   width: 32px;
 }
 
 .formulario__checkbox__label {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 20px;
   font-weight: 700;
-  margin-left: 10px;
 }
 
 .modal__botao {

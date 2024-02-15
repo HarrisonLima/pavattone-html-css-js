@@ -326,7 +326,7 @@ Exemplo: background-color: rgba(0, 0, 0, 1);
 > vw: proporcional a largura da tela: 1vw é igual a 1% da largura
 ```
 ```
-> vh: proporcional a altura da tela: 1vw é igual a 1% da altura
+> vh: proporcional a altura da tela: 1vh é igual a 1% da altura
 ```
 ```
 > vmin: O menor entre vw e vh
@@ -404,15 +404,15 @@ Exemplo {
 > align-items: alinha os elementos flexíveis
 Exemplo :align-items: start; - Alinha os elementos no início do bloco
 
-Exemplo :align-items: center; - Alinha os elementos no centro do bloco
+Exemplo:align-items: center; - Alinha os elementos no centro do bloco
 
-Exemplo :align-items: end; - Alinha os elementos no fim do bloco
+Exemplo:align-items: end; - Alinha os elementos no fim do bloco
 ```
 ```
 > align-content: define a distribuição dos elementos dentro do bloco
 Exemplo :align-content: space-around; - Distribui os elementos com espaçamento no início, no fim e entre os mesmos dentro do bloco.
 
-Exemplo :align-content: space-between; - Distribui os elementos com espaçamento entre os mesmos dentro do bloco.
+Exemplo:align-content: space-between; - Distribui os elementos com espaçamento entre os mesmos dentro do bloco.
 ```
 ```
 > display: define a flexibilidade do componente
