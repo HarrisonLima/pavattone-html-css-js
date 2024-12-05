@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Pavattone</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="modal">
+        <img src="assets/flag.svg" class="brand" />
+        <header class="modal__header">
+          <h1 class="heading--primary">Login</h1>
+          <p class="text">Entre com suas credenciais.</p>
+        </header>
+        <form class="modal__form">
+          <input
+            type="text"
+            name="Usuário"
+            id="input-usuario"
+            class="input--defaut"
+          />
+          <input
+            type="password"
+            name="Senha"
+            id="input-senha"
+            class="input--defaut"
+          />
+          <div class="input--checkbox-box">
+            <input
+              type="checkbox"
+              id="checkbox-senha"
+              class="input--checkbox"
+            />
+            <label for="checkbox-senha" class="input--checkbox__label"
+              >Mostrar senha</label
+            >
+          </div>
+        </form>
+        <button class="button button--green" id="button-logar">Entrar</button>
+      </div>
+    </main>
+  </body>
+</html>
