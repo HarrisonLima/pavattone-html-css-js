@@ -1,0 +1,30 @@
+.modal {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: .75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4.5rem;
+  width: fit-content;
+}
+
+.modal .button {
+  margin-top: 2rem;
+}
+
+.modal__brand,
+.modal__actions {
+  align-self: center;
+}
+
+.modal__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}

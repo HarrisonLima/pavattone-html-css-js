@@ -4,42 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/brand.css" />
+    <link rel="stylesheet" href="styles/button.css" />
+    <link rel="stylesheet" href="styles/input.css" />
+    <link rel="stylesheet" href="styles/modal.css" />
+    <link rel="stylesheet" href="styles/typography.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Pavattone</title>
   </head>
   <body>
     <main class="main">
       <div class="modal">
-        <img src="assets/flag.svg" class="brand" />
+        <div class="modal__brand brand">
+          <div class="brand__circle brand__circle--green"></div>
+          <div class="brand__circle brand__circle--white"></div>
+          <div class="brand__circle brand__circle--red"></div>
+        </div>
         <header class="modal__header">
           <h1 class="heading--primary">Login</h1>
           <p class="text">Entre com suas credenciais.</p>
         </header>
         <form class="modal__form">
-          <input
-            type="text"
-            name="Usuário"
-            id="input-usuario"
-            class="input--defaut"
-          />
-          <input
-            type="password"
-            name="Senha"
-            id="input-senha"
-            class="input--defaut"
-          />
+          <div class="input--default-box">
+            <div class="input--default__icon-box">
+              <i class="fa-solid fa-user input--default__icon"></i>
+            </div>
+            <input
+              type="text"
+              name="Usuário"
+              id="input-usuario"
+              class="input--default"
+              placeholder="Usuário"
+            />
+          </div>
+          <div class="input--default-box">
+            <div class="input--default__icon-box">
+              <i class="fa-solid fa-lock input--default__icon"></i>
+            </div>
+            <input
+              type="password"
+              name="Senha"
+              id="input-senha"
+              class="input--default"
+              placeholder="Senha"
+            />
+          </div>
           <div class="input--checkbox-box">
             <input
               type="checkbox"
               id="checkbox-senha"
               class="input--checkbox"
             />
-            <label for="checkbox-senha" class="input--checkbox__label"
-              >Mostrar senha</label
-            >
+            <label for="checkbox-senha" class="text">Mostrar senha</label>
           </div>
         </form>
-        <button class="button button--green" id="button-logar">Entrar</button>
+        <div class="modal__actions">
+          <button class="button button--green" id="button-logar">Entrar</button>
+        </div>
       </div>
     </main>
   </body>

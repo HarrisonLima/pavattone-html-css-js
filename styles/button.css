@@ -1,0 +1,28 @@
+.button {
+  backface-visibility: hidden;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 -0.25rem 1rem rgba(0, 146, 70, 0.16);
+  color: var(--color-white);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 1rem 3rem;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+}
+
+.button:hover {
+  box-shadow: 0 -0.25rem 1rem rgba(0, 146, 70, 0.32);
+  transform: scale(1.075);
+}
+
+.button:focus {
+  background-color: #06753c;
+  box-shadow: 0 -0.25rem 1rem rgba(0, 146, 70, 0.48);
+  transform: scale(1.025);
+}
+
+.button--green {
+  background-color: var(--color-green);
+}

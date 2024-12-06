@@ -1,0 +1,23 @@
+.brand {
+  display: flex;
+  gap: .5rem;
+  user-select: none;
+}
+
+.brand__circle {
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+}
+
+.brand__circle--green {
+  background-color: var(--color-green);
+}
+
+.brand__circle--white {
+  background-color: var(--color-white);
+}
+
+.brand__circle--red {
+  background-color: var(--color-red);
+}
