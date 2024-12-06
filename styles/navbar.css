@@ -1,0 +1,61 @@
+.navbar {
+  align-items: center;
+  background-color: var(--color-black);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  user-select: none;
+}
+
+.navbar__modules {
+  align-items: center;
+  display: flex;
+  gap: 4rem;
+}
+
+.navbar__modules > h2 {
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar__modules > h2[actived="false"]:hover {
+  transform: scale(1.1);
+}
+
+.navbar__modules > h2[actived="true"]:hover {
+  letter-spacing: 0.125rem;
+  padding: 0.25rem 0.75rem;
+}
+
+.navbar__modules > h2[actived="true"] {
+  border-bottom: 0.125rem solid transparent;
+  padding: 0.25rem 0.5rem;
+}
+
+.navbar__modules > h2:nth-child(1),
+.navbar__modules > h2:nth-child(4) {
+  border-color: var(--color-green);
+}
+
+.navbar__modules > h2:nth-child(2) {
+  border-color: var(--color-white);
+}
+
+.navbar__modules > h2:nth-child(3) {
+  border-color: var(--color-red);
+}
+
+.navbar__actions-box {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar__action {
+  color: var(--color-white);
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar__action:hover {
+  transform: scale(1.2);
+}

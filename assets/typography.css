@@ -1,0 +1,29 @@
+.heading--primary,
+.heading--secondary--white {
+  color: var(--color-white);
+}
+
+.heading--primary {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.heading--secondary {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.heading--secondary--black {
+  color: var(--color-black);
+}
+
+.heading--secondary--action {
+  cursor: pointer;
+  user-select: none;
+}
+
+.text {
+  color: var(--gray-100);
+  font-size: 1.25rem;
+  font-weight: 400;
+}
